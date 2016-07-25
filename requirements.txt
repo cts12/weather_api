@@ -1,0 +1,8 @@
+argparse (1.2.1)
+Django (1.9.8)
+django-filter (0.13.0)
+djangorestframework (3.4.0)
+Markdown (2.6.6)
+pip (1.5.4)
+setuptools (2.2)
+wsgiref (0.1.2)
