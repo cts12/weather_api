@@ -177,7 +177,6 @@ def collect_data(fc, start_unix, end_unix, serial):
     temp_list = []
     humid_list = []
     for weather in w_list:
-        print weather
         if start_unix < weather.get_reference_time() and\
             end_unix > weather.get_reference_time():
             temp_data = weather.get_temperature()
