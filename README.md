@@ -27,7 +27,7 @@ The following examples will not work if the current date has surpassed these dat
 
 1.http://127.0.0.1:8000/v1/barchart/London/01-07-2016/12-12/03-08-2016/20-10/
 
-2.http://127.0.0.1:8000/v1/barchart/London/01-07-2016/12-12/03-08-2016/20-10/
+2.http://127.0.0.1:8000/v1/barchart/London/01-07-2016/03-08-2016/
 
 3.http://127.0.0.1:8000/v1/London/01-07-2016/03-08-2016/
 
