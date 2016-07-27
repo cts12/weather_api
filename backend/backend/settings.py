@@ -22,18 +22,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'zs#n_(bmtmdj621^b&ggkber%kj0-dwy6!zohh(^%so(e!%ka0'
 
+# Open weather map api key.
+# Ideally I would set this as an environment variable, which I will come to
+OWM_API_KEY = 'a354b9fe4fd6fa5749193538d97715a9'
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
-REST_FRAMEWORK = {
-    # Use Django's standard `django.contrib.auth` permissions,
-    # or allow read-only access for unauthenticated users.
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    ]
-    }
 
 # Application definition
 
@@ -77,7 +73,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'backend.wsgi.application'
-
+ROOT_URLCONF = 'backend.urls'
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
