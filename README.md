@@ -9,8 +9,9 @@ The application runs on your local server at 127.0.0.1:8000.
 The following calls can be made to the API.
 Firstly we can render a html barchart to view the aforementioned statistics, at these two following urls.
 The user has a choic to make their forecast range more specific by supplying *start_time* and *end_time* arguments.
-http://127.0.0.1:8000/v1/barchart/*city*/*start_date*/*start_time*/*end_date*/*end_time*/
-http://127.0.0.1:8000/v1/barchart/*city*/*start_date*/*end_date*/
+
+1. http://127.0.0.1:8000/v1/barchart/*city*/*start_date*/*start_time*/*end_date*/*end_time*/
+2. http://127.0.0.1:8000/v1/barchart/*city*/*start_date*/*end_date*/
 
 The user can omit the barchart from the url and obtain JSON data of the same statistics.
 
@@ -24,13 +25,13 @@ The format of *start_time* and *end_time* is 'hour-minute' for example '09-30'. 
 #### Concrete examples
 The following examples will not work if the current date has surpassed these dates. However if you increase the dates to ones with in 14 days from the current time, it will return successfully.
 
-  1.http://127.0.0.1:8000/v1/barchart/London/01-07-2016/12-12/03-08-2016/20-10/
+1.http://127.0.0.1:8000/v1/barchart/London/01-07-2016/12-12/03-08-2016/20-10/
+
+2.http://127.0.0.1:8000/v1/barchart/London/01-07-2016/12-12/03-08-2016/20-10/
+
+3.http://127.0.0.1:8000/v1/London/01-07-2016/03-08-2016/
+
+4.http://127.0.0.1:8000/v1/London/01-07-2016/12-12/03-08-2016/20-10/
   
-  2.http://127.0.0.1:8000/v1/barchart/London/01-07-2016/12-12/03-08-2016/20-10/
-  
-  3.http://127.0.0.1:8000/v1/London/01-07-2016/03-08-2016/
-  
-  4.http://127.0.0.1:8000/v1/London/01-07-2016/12-12/03-08-2016/20-10/
-  
-  #### Future
-  More tests can be created to make sure functionality is kept over time.
+#### Future
+More tests can be created to make sure functionality is kept over time.
