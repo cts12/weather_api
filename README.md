@@ -35,3 +35,7 @@ The following examples will not work if the current date has surpassed these dat
   
 #### Future
 More tests can be created to make sure functionality is kept over time.
+
+## Required dependencies
+To install the required dependencies, go to the root folder and run: 
+`pip install -r requirements.txt`
