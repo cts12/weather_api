@@ -19,13 +19,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'zs#n_(bmtmdj621^b&ggkber%kj0-dwy6!zohh(^%so(e!%ka0'
-
-# Open weather map api key.
-# Ideally I would set this as an environment variable, which I will come to
-OWM_API_KEY = 'a354b9fe4fd6fa5749193538d97715a9'
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
